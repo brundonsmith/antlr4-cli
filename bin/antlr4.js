@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
-var shell = require('shelljs');
+var execFile = require('child_process').execFile;
 
-var arguments = ' ' + process.argv.splice(2).join(' ');
-shell.exec('java -jar ' + __dirname + '/antlr-4.5-complete.jar' + arguments);
+var arguments = process.argv.splice(2);
+execFile('java', ['-jar', __dirname, '/antlr-4.5-complete.jar'].concat(arguments));
