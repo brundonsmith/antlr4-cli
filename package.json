@@ -4,15 +4,12 @@
   "description": "A simple NPM wrapper for the antlr4 tool, to allow the dependency to be managed by NPM",
   "main": "bin/antlr4.js",
   "scripts": {},
-  "bin": {
-  },
+  "bin": {},
   "keywords": [
     "antlr4",
     "cli"
   ],
   "author": "Brandon Smith",
   "license": "ISC",
-  "dependencies": {
-    "shelljs": "^0.7.3"
-  }
+  "dependencies": {}
 }
